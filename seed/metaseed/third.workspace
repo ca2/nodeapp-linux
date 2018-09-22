@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="all32">
+		<Project filename="../../../app/appseed/ace/ace.cbp" />
+		<Project filename="../../../third/appseed/iconv/atomiconv.cbp">
+			<Depends filename="../../../app/appseed/ace/ace.cbp" />
+		</Project>
+		<Project filename="../../../third/appseed/strophe/strophe.cbp">
+			<Depends filename="../../../app/appseed/ace/ace.cbp" />
+		</Project>
+		<Project filename="../../../third/appseed/winpr/axiswinpr.cbp">
+			<Depends filename="../../../app/appseed/ace/ace.cbp" />
+		</Project>
+		<Project filename="../../../third/appseed/freerdp/axisfreerdp.cbp">
+			<Depends filename="../../../app/appseed/ace/ace.cbp" />
+			<Depends filename="../../../third/appseed/winpr/axiswinpr.cbp" />
+		</Project>
+		<Project filename="../../../third/appseed/clientchannels/axisclientchannels.cbp">
+			<Depends filename="../../../app/appseed/ace/ace.cbp" />
+			<Depends filename="../../../third/appseed/winpr/axiswinpr.cbp" />
+			<Depends filename="../../../third/appseed/freerdp/axisfreerdp.cbp" />
+		</Project>
+		<Project filename="../../../third/appseed/libmpg123/basempg123.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

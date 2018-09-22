@@ -1,0 +1,16 @@
+﻿#!/bin/bash
+
+
+function install()
+{
+
+	cd $1
+
+	cd stage/x86
+
+	./app : app=app-core/projection type=application locale=_std schema=_std install build_number=basis
+
+}
+
+
+install $1

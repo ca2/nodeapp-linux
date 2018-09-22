@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="all32">
+		<Project filename="../../appseed/app/app.cbp">
+			<Depends filename="../../os/os.cbp" />
+		</Project>
+		<Project filename="../../../app-core/appseed/alarm/alarm.cbp" />
+		<Project filename="../../../app-core/appseed/deepfish/deepfish.cbp" />
+		<Project filename="../../../app-core/appseed/netnode_dynamic_web_server/netnode_dynamic_web_server.cbp">
+			<Depends filename="../../../app/thirdparty/appseed/cairo/cairo.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/freetype/freetype.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/openssl/openssl.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/pixman/pixman.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/zlib/zlib.cbp" />
+			<Depends filename="../../appseed/app/app.cbp" />
+			<Depends filename="../../../app-core/appseed/alarm/alarm.cbp" />
+			<Depends filename="../../../app-core/appseed/deepfish/deepfish.cbp" />
+			<Depends filename="../../../app-core/appseed/uinteraction/uinteraction.cbp" />
+			<Depends filename="../../os/os.cbp" />
+			<Depends filename="../../../app-core/appseed/netnode/netnode.cbp" />
+			<Depends filename="../../../app-core/appseed/netnode_dynamic_source_library/netnode_dynamic_source_library.cbp" />
+			<Depends filename="../../../app-core/appseed/netnode_dynamic_source_script/netnode_dynamic_source_script.cbp" />
+		</Project>
+		<Project filename="../../../app-core/appseed/netnode_dynamic_web_server_cfg/netnode_dynamic_web_server_cfg.cbp">
+			<Depends filename="../../appseed/app/app.cbp" />
+			<Depends filename="../../../app-core/appseed/alarm/alarm.cbp" />
+			<Depends filename="../../../app-core/appseed/deepfish/deepfish.cbp" />
+			<Depends filename="../../../app-core/appseed/uinteraction/uinteraction.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/cairo/cairo.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/freetype/freetype.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/openssl/openssl.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/pixman/pixman.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/zlib/zlib.cbp" />
+			<Depends filename="../../../app/appseed/draw2d_cairo/draw2d_cairo.cbp" />
+			<Depends filename="../../os/os.cbp" />
+			<Depends filename="../../../app-core/appseed/tesseract/tesseract.cbp" />
+		</Project>
+		<Project filename="../../../app-core/appseed/uinteraction/uinteraction.cbp" />
+		<Project filename="../../../app/appseed/base/base.cbp" />
+		<Project filename="../../../app/thirdparty/appseed/cairo/cairo.cbp">
+			<Depends filename="../../../app/thirdparty/appseed/freeimage/FreeImage.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/freetype/freetype.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/pixman/pixman.cbp" />
+		</Project>
+		<Project filename="../../../app/thirdparty/appseed/freeimage/FreeImage.cbp">
+			<Depends filename="../../../app/appseed/base/base.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/mysql/mysql.cbp" />
+		</Project>
+		<Project filename="../../../app/thirdparty/appseed/freetype/freetype.cbp">
+			<Depends filename="../../../app/thirdparty/appseed/zlib/zlib.cbp" />
+		</Project>
+		<Project filename="../../../app/thirdparty/appseed/mysql/mysql.cbp">
+			<Depends filename="../../../app/appseed/base/base.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/openssl/openssl.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/zlib/zlib.cbp" />
+		</Project>
+		<Project filename="../../../app/thirdparty/appseed/openssl/openssl.cbp" />
+		<Project filename="../../../app/thirdparty/appseed/pixman/pixman.cbp">
+			<Depends filename="../../../app/thirdparty/appseed/zlib/zlib.cbp" />
+		</Project>
+		<Project filename="../../../app/thirdparty/appseed/zlib/zlib.cbp">
+			<Depends filename="../../../app/appseed/base/base.cbp" />
+		</Project>
+		<Project filename="../../../app/appseed/boot/boot.cbp">
+			<Depends filename="../../../app/appseed/base/base.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/cairo/cairo.cbp" />
+		</Project>
+		<Project filename="../../../app/appseed/core/core.cbp">
+			<Depends filename="../../../app/thirdparty/appseed/mysql/mysql.cbp" />
+		</Project>
+		<Project filename="../../../app/appseed/draw2d_cairo/draw2d_cairo.cbp">
+			<Depends filename="../../../app/appseed/base/base.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/cairo/cairo.cbp" />
+			<Depends filename="../../../app/appseed/boot/boot.cbp" />
+			<Depends filename="../../../app/appseed/core/core.cbp" />
+		</Project>
+		<Project filename="../../os/os.cbp">
+			<Depends filename="../../../app/thirdparty/appseed/freetype/freetype.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/openssl/openssl.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/zlib/zlib.cbp" />
+			<Depends filename="../../../app/appseed/boot/boot.cbp" />
+			<Depends filename="../../../app/appseed/core/core.cbp" />
+		</Project>
+		<Project filename="../../../app-core/appseed/netnode/netnode.cbp">
+			<Depends filename="../../../app/thirdparty/appseed/cairo/cairo.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/freetype/freetype.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/openssl/openssl.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/pixman/pixman.cbp" />
+			<Depends filename="../../../app/thirdparty/appseed/zlib/zlib.cbp" />
+			<Depends filename="../../os/os.cbp" />
+		</Project>
+		<Project filename="../../../app-core/appseed/netnode_dynamic_source_library/netnode_dynamic_source_library.cbp" />
+		<Project filename="../../../app-core/appseed/netnode_dynamic_source_script/netnode_dynamic_source_script.cbp" />
+		<Project filename="../../../app-core/appseed/tesseract/tesseract.cbp">
+			<Depends filename="../../../app/appseed/base/base.cbp" />
+			<Depends filename="../../../app/appseed/boot/boot.cbp" />
+			<Depends filename="../../../app/appseed/core/core.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>

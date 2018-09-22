@@ -1,0 +1,13 @@
+
+
+function install()
+{
+	
+	cd ../../../../../../stage/x86
+
+	./app : app=app-core/deepfish type=application locale=_std schema=_std install build_number=basis
+
+}
+
+
+install

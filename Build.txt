@@ -1,0 +1,15 @@
+
+
+cannot find -lbfd
+
+Binary File Descriptor library
+
+apt-get install binutils-dev
+
+
+
+
+
+FreeImage Library  TBS<3
+
+apt-get install libfreeimage-dev

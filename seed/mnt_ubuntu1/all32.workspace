@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="all32">
+		<Project filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/app/app.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/bzip2/axisbzip2.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/cairo/axiscairo.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/crypto/axiscrypto.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freeimage/axisfreeimage.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freetype/axisfreetype.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/idn/axisidn.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/mysql/axismysql.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/openssl/axisopenssl.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/pixman/axispixman.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/zlib/axiszlib.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-cidadedecuritiba/appseed/alphaclock/alphaclock.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/app/app.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/flag/flag.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/hellomultiverse/hellomultiverse.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/projection/projection.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/sphere/sphere.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/alarm/alarm.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/app/app.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/deepfish/deepfish.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/userdatetime/userdatetime.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/auraverse/auraverse.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/app/app.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/audio_decode_wave/audio_decode_wave.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/audio_alsa/audio_alsa.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/draw2d_cairo/draw2d_cairo.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/html_lite/html_lite.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/html/html.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/multimedia/multimedia.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/sphere/sphere.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/wndfrm_core/wndfrm_core.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/deepfish/deepfish.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/pixman/axispixman.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/deepfish_alarm/deepfish_alarm.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/alarm/alarm.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/flag/flag.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/app/app.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/hellomultiverse/hellomultiverse.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/wndfrm_core/wndfrm_core.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/hellomultiverse/hellomultiverse.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/app/app.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/aura/pcre/aurapcre.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/bzip2/axisbzip2.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/cairo/axiscairo.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freeimage/axisfreeimage.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freetype/axisfreetype.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/image_jpeg/axis_image_jpeg.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/image_png/axis_image_png.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/mysql/axismysql.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/openssl/axisopenssl.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/pixman/axispixman.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/zlib/axiszlib.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/draw2d_cairo/draw2d_cairo.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/html_lite/html_lite.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/html/html.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/math/math.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/wndfrm_core/wndfrm_core.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/irc_bot/irc_bot.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/irc/irc.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/irc_client/irc_client.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/irc/irc.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/irc_resident/irc_resident.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/irc_bot/irc_bot.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/irc_client/irc_client.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/projection/projection.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/app/app.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/draw2d_cairo/draw2d_cairo.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/html_lite/html_lite.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/html/html.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/wndfrm_core/wndfrm_core.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/rdpclient/rdpclient.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/app/app.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/clientchannels/axisclientchannels.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freerdp/axisfreerdp.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/rdpclient/axisrdpclient.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/winpr/axiswinpr.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/draw2d_cairo/draw2d_cairo.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/wndfrm_core/wndfrm_core.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/resident/resident.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/irc_resident/irc_resident.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/xmpp_resident/xmpp_resident.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/xmpp_bot/xmpp_bot.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/app/app.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/html_lite/html_lite.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/html/html.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/math/math.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/xmpp/xmpp.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/xmpp_client/xmpp_client.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/app/app.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/aura/pcre/aurapcre.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/pixman/axispixman.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/draw2d_cairo/draw2d_cairo.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/html_lite/html_lite.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/html/html.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/wndfrm_core/wndfrm_core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/xmpp/xmpp.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/xmpp_resident/xmpp_resident.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/xmpp_bot/xmpp_bot.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/xmpp_client/xmpp_client.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/asciimedia/asciimedia.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/multimedia/multimedia.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/multimedia/veriwell_multimedia.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/mplite/mplite.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/app/app.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/deepfish/deepfish.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/deepfish_alarm/deepfish_alarm.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/audio_decode_libmpg123/audio_decode_libmpg123.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/audio_alsa/audio_alsa.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/draw2d_cairo/draw2d_cairo.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/math/math.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/multimedia/multimedia.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/music_midi_alsa/music_midi_alsa.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/multimedia/veriwell_multimedia.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/waven/waven.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/app/app.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/asciimedia/asciimedia.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/audio_decode_libmpg123/audio_decode_libmpg123.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/audio_decode_spotify/audio_decode_spotify.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/audio_alsa/audio_alsa.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/image_jpeg/axis_image_jpeg.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/image_png/axis_image_png.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/pixman/axispixman.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/draw2d_cairo/draw2d_cairo.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/multimedia/multimedia.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/music_midi_alsa/music_midi_alsa.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/multimedia/veriwell_multimedia.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/wndfrm_core/wndfrm_core.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/audio_decode_libmpg123/audio_decode_libmpg123.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/id3lib/id3lib.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/libmpg123/basempg123.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/multimedia/multimedia.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/multimedia/veriwell_multimedia.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/audio_decode_spotify/audio_decode_spotify.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/multimedia/multimedia.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/audio_decode_wave/audio_decode_wave.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/multimedia/multimedia.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/audio_alsa/audio_alsa.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/multimedia/multimedia.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/atom/iconv/atomiconv.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/atom/iconv/atomiconv.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/aura/charguess/auracharguess.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/aura/expat/auraexpat.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/aura/pcre/aurapcre.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/aura/sqlite/aurasqlite.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/aura/charguess/auracharguess.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/aura/sqlite/aurasqlite.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/bzip2/axisbzip2.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/crypto/axiscrypto.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freeimage/axisfreeimage.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freetype/axisfreetype.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/idn/axisidn.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/openssl/axisopenssl.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/zlib/axiszlib.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/bzip2/axisbzip2.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/cairo/axiscairo.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freeimage/axisfreeimage.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freetype/axisfreetype.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/pixman/axispixman.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/zlib/axiszlib.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/crypto/axiscrypto.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/clientchannels/axisclientchannels.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freerdp/axisfreerdp.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/winpr/axiswinpr.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/freeimage/axisfreeimage.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/zlib/axiszlib.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/freetype/axisfreetype.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/crypto/axiscrypto.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freeimage/axisfreeimage.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/image_png/axis_image_png.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/zlib/axiszlib.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/freerdp/axisfreerdp.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freeimage/axisfreeimage.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/winpr/axiswinpr.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/openh264/WelsCommon.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/openh264/WelsDecoder.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/openh264/WelsEncoder.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/openh264/WelsProcessing.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/idn/axisidn.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/image_jpeg/axis_image_jpeg.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/image_png/axis_image_png.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/mysql/axismysql.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/crypto/axiscrypto.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/openssl/axisopenssl.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/zlib/axiszlib.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/openssl/axisopenssl.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/crypto/axiscrypto.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/pixman/axispixman.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/rdpclient/axisrdpclient.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/clientchannels/axisclientchannels.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freerdp/axisfreerdp.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/winpr/axiswinpr.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/winpr/axiswinpr.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/openssl/axisopenssl.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/zlib/axiszlib.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/bzip2/axisbzip2.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freeimage/axisfreeimage.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freetype/axisfreetype.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/idn/axisidn.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/mysql/axismysql.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/zlib/axiszlib.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/id3lib/id3lib.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/zlib/axiszlib.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/libmpg123/basempg123.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/bzip2/axisbzip2.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freeimage/axisfreeimage.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freetype/axisfreetype.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/mysql/axismysql.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/openssl/axisopenssl.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/zlib/axiszlib.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/appseed/draw2d_cairo/draw2d_cairo.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/appseed/draw2d_xlib/draw2d_xlib.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/game/appseed/pacman/pacman.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/hellomultiverse/hellomultiverse.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/audio_decode_wave/audio_decode_wave.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/audio_alsa/audio_alsa.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/atom/iconv/atomiconv.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freetype/axisfreetype.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/draw2d_cairo/draw2d_cairo.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/html_lite/html_lite.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/html/html.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/multimedia/multimedia.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/game/appseed/tictactoe/tictactoe.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freeimage/axisfreeimage.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/draw2d_cairo/draw2d_cairo.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/gcom/gcom.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freeimage/axisfreeimage.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/freetype/axisfreetype.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/html_lite/html_lite.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/appseed/html/html.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/html_lite/html_lite.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/math/math.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/irc/irc.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/vericard/vericard.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/appseed/math/math.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/multimedia/multimedia.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/gcom/gcom.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/html_lite/html_lite.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/html/html.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/math/math.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/nodeapp/appseed/music_midi_alsa/music_midi_alsa.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/multimedia/veriwell_multimedia.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/appseed/programming/programming.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/appseed/sphere/sphere.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/math/math.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/tesseract/tesseract.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/userdatetime/userdatetime.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/vericard/vericard.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-veriwell/appseed/multimedia/veriwell_multimedia.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/aura/aura.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/axis/axis.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/base/base.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/html_lite/html_lite.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/html/html.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/multimedia/multimedia.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/openh264/WelsCommon.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/openh264/WelsDecoder.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/openh264/WelsCommon.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/openh264/WelsEncoder.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/openh264/WelsCommon.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/openh264/WelsProcessing.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app/axis/openh264/WelsProcessing.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/axis/openh264/WelsCommon.cbp" />
+		</Project>
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/wndfrm_core/wndfrm_core.cbp" />
+		<Project filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/xmpp/xmpp.cbp">
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/aura/expat/auraexpat.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/aura/pcre/aurapcre.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app/appseed/core/core.cbp" />
+			<Depends filename="../../../../mnt/ubuntu1/ca2/app-core/appseed/vericard/vericard.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>

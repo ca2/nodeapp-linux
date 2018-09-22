@@ -1,0 +1,14 @@
+﻿#!/bin/bash
+
+
+function launch()
+{
+	
+	cd /ca2/stage/x86
+
+	./app : app=app-core/netnodelite type=application locale=_std schema=_std build_number=basis
+
+}
+
+
+launch

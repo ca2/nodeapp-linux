@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="audio_alsa" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option extended_obj_names="1" />
+		<Build>
+			<Target title="basis">
+				<Option output="../../../time/x64/basis/audio_alsa" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../time/x64/basis/" />
+				<Option object_output="../../../time/intermediate/nodeapp/audio_alsa" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option parameters=": app=app-core/hellomultiverse build_number=basis locale=_std schema=_std" />
+				<Option host_application="../../../time/x64/basis/app" />
+				<Option run_host_application_in_terminal="0" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="memdleak">
+				<Option output="../../../time/x64/basis/audio_alsa" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../time/x64/basis/" />
+				<Option object_output="../../../time/intermediate/nodeapp/audio_alsa" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option parameters=": app=app-core/hellomultiverse build_number=basis locale=_std schema=_std" />
+				<Option host_application="../../../time/x64/basis/app" />
+				<Option run_host_application_in_terminal="0" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DMEMDLEAK" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++14" />
+			<Add option="-fexceptions" />
+			<Add option="-fnon-call-exceptions" />
+			<Add option="-fno-pie" />
+			<Add option="-fno-stack-protector" />
+			<Add option="-Wno-pointer-arith" />
+			<Add option="-Wno-attributes" />
+			<Add option="-Winvalid-pch" />
+			<Add option="-Wno-conversion-null" />
+			<Add option="-fPIC" />
+			<Add option="-D_AUDIO_ALSA_LIBRARY" />
+			<Add directory="../../../include" />
+			<Add directory="../../../app/include" />
+			<Add directory="../../../app/thirdparty/appseed" />
+			<Add directory="." />
+			<Add directory=".." />
+			<Add directory="../.." />
+			<Add directory="../../../app/appseed/core" />
+			<Add directory="../../../app/appseed/base" />
+			<Add directory="../../../app/appseed" />
+			<Add directory="../../../app" />
+			<Add directory="../../../app/thirdparty/include" />
+			<Add directory="../../.." />
+			<Add directory="../../../app/appseed/aura" />
+			<Add directory="../../../app/appseed/axis" />
+			<Add directory="../../../app/axis" />
+		</Compiler>
+		<Linker>
+			<Add option="-Wl,-rpath=\\$$$ORIGIN" />
+			<Add option="-laura" />
+			<Add option="-laxis" />
+			<Add option="-lbase" />
+			<Add option="-lcore" />
+			<Add option="-lasound" />
+			<Add option="-lmultimedia" />
+			<Add option="-Wl,-z,defs" />
+			<Add directory="../../../time/x64/basis" />
+			<Add directory="/usr/lib64/mysql/" />
+		</Linker>
+		<Unit filename="audio_alsa.h" />
+		<Unit filename="audio_alsa_factory_exchange.cpp" />
+		<Unit filename="audio_alsa_factory_exchange.h" />
+		<Unit filename="audio_alsa_snd_pcm.cpp" />
+		<Unit filename="audio_alsa_snd_pcm.h" />
+		<Unit filename="audio_alsa_translation.cpp" />
+		<Unit filename="audio_alsa_translation.h" />
+		<Unit filename="audio_alsa_wave_in.cpp" />
+		<Unit filename="audio_alsa_wave_in.h" />
+		<Unit filename="audio_alsa_wave_out.cpp" />
+		<Unit filename="audio_alsa_wave_out.h" />
+		<Unit filename="framework.cpp" />
+		<Unit filename="framework.h">
+			<Option compile="1" />
+			<Option weight="0" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger>
+				<search_path add="/ca2/app/appseed/ca/" />
+			</debugger>
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

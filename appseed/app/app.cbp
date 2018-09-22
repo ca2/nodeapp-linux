@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="app" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option extended_obj_names="1" />
+		<Build>
+			<Target title="basis">
+				<Option output="../../../time/x64/basis/app" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../../../time/x64/basis/" />
+				<Option object_output="../../../time/intermediate/nodeapp/app" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option parameters=": app=app-core/hellomultiverse build_number=basis locale=_std schema=_std" />
+				<Option host_application="../../../time/x64/basis/app" />
+				<Option run_host_application_in_terminal="0" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-fPIC" />
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+				</Linker>
+			</Target>
+			<Target title="memdleak">
+				<Option output="../../../time/x64/basis/app" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../../../time/x64/basis/" />
+				<Option object_output="../../../time/intermediate/nodeapp/app" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option parameters=": app=app-core/hellomultiverse build_number=basis locale=_std schema=_std" />
+				<Option host_application="../../../time/x64/basis/app" />
+				<Option run_host_application_in_terminal="0" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DMEMDLEAK" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++14" />
+			<Add option="-fPIC" />
+			<Add option="-fexceptions" />
+			<Add option="-fnon-call-exceptions" />
+			<Add option="-fno-pie" />
+			<Add option="-fno-stack-protector" />
+			<Add option="-Wno-pointer-arith" />
+			<Add option="-Wno-attributes" />
+			<Add option="-Winvalid-pch" />
+			<Add option="-Wno-conversion-null" />
+			<Add directory="../../../include" />
+			<Add directory="../../../app/include" />
+			<Add directory="../../../app/thirdparty/appseed" />
+			<Add directory="." />
+			<Add directory=".." />
+			<Add directory="../.." />
+			<Add directory="../../../app/appseed/boot" />
+			<Add directory="../../../app/appseed/core" />
+			<Add directory="../../../app/appseed" />
+			<Add directory="../../../app" />
+			<Add directory="../../../app/thirdparty/include" />
+			<Add directory="../../.." />
+			<Add directory="../../../app/appseed/base" />
+			<Add directory="../../../../ca2" />
+			<Add directory="../../../app/appseed/aura" />
+			<Add directory="../../../app/appseed/axis" />
+		</Compiler>
+		<Linker>
+			<Add option="-Wl,-rpath=\\$$$ORIGIN" />
+			<Add option="-lX11" />
+			<Add option="-latomiconv" />
+			<Add option="-lsqlite3" />
+			<Add option="-laura" />
+			<Add option="-lbz2" />
+			<Add option="-lz" />
+			<Add option="-lcrypto" />
+			<Add option="-lssl" />
+			<Add option="-lidn" />
+			<Add option="-lfreetype" />
+			<Add option="-laxis" />
+			<Add option="-lbase" />
+			<Add option="-lcore" />
+			<Add option="-Wl,-z,defs" />
+			<Add directory="../../../time/x64/basis" />
+			<Add directory="/usr/lib64/mysql/" />
+		</Linker>
+		<Unit filename="app.cpp" />
+		<Unit filename="framework.h">
+			<Option compile="1" />
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="main.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger>
+				<search_path add="/ca2/app/appseed/ca/" />
+			</debugger>
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

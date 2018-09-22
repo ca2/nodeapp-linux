@@ -1,0 +1,8 @@
+**/.vs
+**/.git
+**/.svn
+**/cvs
+*.h.gch
+*.layout
+*.depend
+*.VC.db

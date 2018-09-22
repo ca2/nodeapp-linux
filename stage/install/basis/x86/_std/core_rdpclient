@@ -1,0 +1,14 @@
+﻿#!/bin/bash
+
+
+function install()
+{
+	
+	cd ../../../../../../stage/x86
+
+	./app : app=app-core/rdpclient type=application locale=_std schema=_std install build_number=basis
+
+}
+
+
+install
