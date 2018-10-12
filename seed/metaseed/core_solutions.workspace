@@ -268,6 +268,10 @@
 			<Depends filename="../../../app/appseed/core/core.cbp" />
 		</Project>
 		<Project filename="../../../app-core/appseed/tesseract/tesseract.cbp">
+			<Depends filename="../../../app-veriwell/appseed/audio_decode_libmpg123/audio_decode_libmpg123.cbp" />
+			<Depends filename="../../../app-core/appseed/audio_decode_wave/audio_decode_wave.cbp" />
+			<Depends filename="../../appseed/audio_alsa/audio_alsa.cbp" />
+			<Depends filename="../../../app-core/appseed/id3lib/id3lib.cbp" />
 			<Depends filename="../../../app-core/appseed/multimedia/multimedia.cbp" />
 			<Depends filename="../../../app/appseed/sphere/sphere.cbp" />
 		</Project>
