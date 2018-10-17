@@ -9,6 +9,7 @@
 			<Depends filename="../../../app/appseed/draw2d_cairo/draw2d_cairo.cbp" />
 			<Depends filename="../../../app-core/appseed/multimedia/multimedia.cbp" />
 			<Depends filename="../../appseed/music_midi_alsa/music_midi_alsa.cbp" />
+			<Depends filename="../../../app-core/appseed/rdpsnd-client-audio_decode/rdpsnd-client-audio_decode.cbp" />
 		</Project>
 		<Project filename="../../../app-veriwell/appseed/waven/waven.cbp">
 			<Depends filename="../../appseed/app/app.cbp" />
@@ -31,7 +32,6 @@
 			<Depends filename="../../../app/appseed/aura/aura.cbp" />
 			<Depends filename="../../../app/appseed/axis/axis.cbp" />
 			<Depends filename="../../../app/appseed/base/base.cbp" />
-			<Depends filename="../../../app/appseed/basecore/basecore.cbp" />
 			<Depends filename="../../../app-core/appseed/id3lib/id3lib.cbp" />
 			<Depends filename="../../../app/appseed/core/core.cbp" />
 			<Depends filename="../../../app/appseed/draw2d_cairo/draw2d_cairo.cbp" />
@@ -99,14 +99,12 @@
 		<Project filename="../../../app/appseed/base/base.cbp">
 			<Depends filename="../../../app/appseed/axis/axis.cbp" />
 		</Project>
-		<Project filename="../../../app/appseed/basecore/basecore.cbp" />
 		<Project filename="../../../app-core/appseed/id3lib/id3lib.cbp">
 			<Depends filename="../../../app/appseed/aura/aura.cbp" />
 		</Project>
 		<Project filename="../../../app/appseed/core/core.cbp">
 			<Depends filename="../../../app/appseed/axis/axis.cbp" />
 			<Depends filename="../../../app/appseed/base/base.cbp" />
-			<Depends filename="../../../app/appseed/basecore/basecore.cbp" />
 		</Project>
 		<Project filename="../../../app/appseed/draw2d_cairo/draw2d_cairo.cbp">
 			<Depends filename="../../../app/appseed/base/base.cbp" />
@@ -144,5 +142,8 @@
 		</Project>
 		<Project filename="../../../app-veriwell/appseed/video_decode_ffmpeg/video_decode_ffmpeg.cbp" />
 		<Project filename="../../../app/appseed/wndfrm_core/wndfrm_core.cbp" />
+		<Project filename="../../../app-core/appseed/rdpsnd-client-audio_decode/rdpsnd-client-audio_decode.cbp">
+			<Depends filename="../../../app/appseed/aura/aura.cbp" />
+		</Project>
 	</Workspace>
 </CodeBlocks_workspace_file>
