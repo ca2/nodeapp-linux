@@ -9,6 +9,7 @@
 			<Depends filename="../../../app/appseed/draw2d_cairo/draw2d_cairo.cbp" />
 			<Depends filename="../../../app-core/appseed/gcom/gcom.cbp" />
 			<Depends filename="../../../app/appseed/sphere/sphere.cbp" />
+			<Depends filename="../../../app/appseed/wndfrm_core/wndfrm_core.cbp" />
 		</Project>
 		<Project filename="../../../app-core/appseed/flag/flag.cbp">
 			<Depends filename="../../appseed/app/app.cbp" />
