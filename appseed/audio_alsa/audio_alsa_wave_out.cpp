@@ -255,20 +255,32 @@ namespace multimedia
          }
 
 
-         m_dwPeriodTime =  20 * 1000; /* period time in us */
+//         m_dwPeriodTime =  20 * 1000; /* period time in us */
 
-         m_iBufferCountEffective = 4;
+//         m_iBufferCountEffective = 4;
 
          if(epurpose == ::multimedia::audio::purpose_playback)
          {
 
-            m_dwPeriodTime =  50 * 1000; /* period time in us */
+  //          m_dwPeriodTime =  6 * 1000; /* period time in us */
 
-            m_iBufferCountEffective = 8;
+            //m_iBufferCountEffective = 16;
+
+            m_framesBuffer = 2048;
+
+            m_iBufferCount = 16;
+
+         }
+         else
+         {
+
+            m_framesBuffer = 512;
+
+            m_iBufferCount = 4;
 
          }
 
-         m_iBufferCount = m_iBufferCountEffective;
+//         m_iBufferCount = m_iBufferCountEffective;
 
          m_pthreadCallback = pthreadCallback;
 
@@ -291,18 +303,22 @@ namespace multimedia
 
          }
 
-         if(m_iBufferCount < m_iBufferCountEffective)
-         {
+//         if(m_iBufferCount < m_iBufferCountEffective)
+//         {
+//
+//            m_iBufferCountEffective = m_iBufferCount;
+//
+//         }
 
-            m_iBufferCountEffective = m_iBufferCount;
+         //UINT uiBufferSize = snd_pcm_frames_to_bytes(m_ppcm, m_framesPeriodSize);
 
-         }
+         m_uiBufferTime = m_framesBuffer * 1000 * 1000 / uiSamplesPerSec;
 
-         UINT uiBufferSize = snd_pcm_frames_to_bytes(m_ppcm, m_framesPeriodSize);
+         UINT uiBufferSize = snd_pcm_frames_to_bytes(m_ppcm, m_framesBuffer);
 
-         wave_out_get_buffer()->PCMOutOpen(this, uiBufferSize, m_iBufferCountEffective, 128, m_pwaveformat, m_pwaveformat);
+         wave_out_get_buffer()->PCMOutOpen(this, uiBufferSize, m_iBufferCount, 128, m_pwaveformat, m_pwaveformat);
 
-         m_pprebuffer->open(m_pwaveformat->nChannels, m_iBufferCountEffective, m_framesPeriodSize);
+         m_pprebuffer->open(m_pwaveformat->nChannels, m_iBufferCount, m_framesBuffer);
 
 //         m_pprebuffer->SetMinL1BufferCount(wave_out_get_buffer()->GetBufferCount());
 
@@ -317,9 +333,7 @@ namespace multimedia
 
          }
 
-         int iBufferThreshold = MIN((m_framesBufferSize / m_framesPeriodSize), m_iBufferCountEffective);
-
-         snd_pcm_sframes_t framesThreshold = (iBufferThreshold - 1) * m_framesPeriodSize;
+         snd_pcm_sframes_t framesThreshold = (m_iBufferCount - 1) * m_framesBuffer;
 
          // start the transfer when the buffer is almost full:
          if((err = snd_pcm_sw_params_set_start_threshold(m_ppcm, m_pswparams, framesThreshold)) < 0)
@@ -332,7 +346,7 @@ namespace multimedia
          }
 
          // allow the transfer when at least m_framesPeriodSize samples can be processed
-         if((err = snd_pcm_sw_params_set_avail_min(m_ppcm, m_pswparams, m_framesPeriodSize)) < 0)
+         if((err = snd_pcm_sw_params_set_avail_min(m_ppcm, m_pswparams, m_framesBuffer)) < 0)
          {
 
             TRACE("unable to set avail min for playback: %s\n", snd_strerror(err));
@@ -688,7 +702,7 @@ namespace multimedia
 
          int result = 0;
 
-         snd_pcm_sframes_t framesRemain = m_framesPeriodSize;
+         snd_pcm_sframes_t framesRemain = m_framesBuffer;
 
          int cptr = snd_pcm_frames_to_bytes(m_ppcm, framesRemain);
 
@@ -736,14 +750,14 @@ namespace multimedia
                return;
 
             }
-            else if(avail >= m_framesPeriodSize)
+            else if(avail >= m_framesBuffer)
             {
 
                break;
 
             }
 
-            Sleep(m_dwPeriodTime / (4 * 1000));
+            Sleep(m_uiBufferTime / (4 * 1000));
 
          }
 

@@ -26,7 +26,7 @@ namespace multimedia
          //int_array               m_iaReady;
          //manual_reset_event      m_evReady;
 
-         int                     m_iBufferCountEffective;
+         //int                     m_iBufferCountEffective;
 
 
          wave_out(::aura::application * papp);

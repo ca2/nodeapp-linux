@@ -21,10 +21,10 @@ namespace multimedia
          snd_pcm_sw_params_t *            m_pswparams;
          snd_async_handler_t *            m_phandler;
          int                              m_iCurrentBuffer;
-         unsigned int                     m_dwBufferTime;
-         unsigned int                     m_dwPeriodTime;
-         snd_pcm_uframes_t                m_framesBufferSize;
-         snd_pcm_uframes_t                m_framesPeriodSize;
+         unsigned int                     m_uiBufferTime; // in microseconds
+         //unsigned int                     m_dwPeriodTime;
+         snd_pcm_uframes_t                m_framesBuffer;
+         //snd_pcm_uframes_t                m_framesPeriodSize;
          int                              m_iBufferCount;
 
 

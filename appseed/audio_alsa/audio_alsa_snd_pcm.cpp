@@ -20,7 +20,7 @@ namespace multimedia
          m_pswparams       = NULL;
          m_phandler        = NULL;
          m_iCurrentBuffer  = 0;
-         m_dwBufferTime    = 100 * 1000; /* ring buffer length in us */
+         //m_dwBufferTime    = 100 * 1000; /* ring buffer length in us */
       }
 
       snd_pcm::~snd_pcm()
@@ -129,14 +129,28 @@ namespace multimedia
                   // Get info on the wave outs of this device
                   snd_pcm_info_set_stream(pcmInfo, stream_type);
 
-                  subDevCount = 1;
-                  subDevNum = -1;
+                  subDevCount = snd_pcm_info_get_subdevices_count(pcmInfo);
 
-                  // More subdevices?
-                  while (++subDevNum < subDevCount)
+                  TRACE("\nFound %i wave output subdevices on card %i, %i : %s \n", subDevCount, cardNum, devNum, snd_strerror(err));
+
+                  if(subDevCount <= 0)
                   {
 
-                     // Tell ALSA to fill in our snd_pcm_info_t with info on this subdevice
+                     strFormat.Format("hw:%d,%d", cardNum, devNum);
+
+                     // NOTE: If there's only one subdevice, then the subdevice number is immaterial,
+                     // and can be omitted when you specify the hardware name
+                     straName.add(snd_pcm_info_get_name(pcmInfo));
+
+                     straDevice.add(strFormat);
+
+
+                  }
+                  else
+                  {
+
+                  for(subDevNum = 0; subDevNum < subDevCount; subDevNum++)
+                  {
 
                      snd_pcm_info_set_subdevice(pcmInfo, subDevNum);
 
@@ -149,32 +163,7 @@ namespace multimedia
 
                      }
 
-                     // Print out how many subdevices (once only)
-                     if (!subDevNum)
-                     {
-
-                        subDevCount = snd_pcm_info_get_subdevices_count(pcmInfo);
-
-                        TRACE("\nFound %i wave output subdevices on card %i, %i : %s \n", subDevCount, cardNum, devNum, snd_strerror(err));
-
-                     }
-
-                     // NOTE: If there's only one subdevice, then the subdevice number is immaterial,
-                     // and can be omitted when you specify the hardware name
-                     //TRACE((subDevCount > 1 ? "    hw:%i,%i,%i\n" : "    hw:%i,%i\n"), cardNum, devNum, subDevNum);
-
-                     if(subDevCount > 1)
-                     {
-
-                        strFormat.Format("hw:%d,%d,%d", cardNum, devNum, subDevNum);
-
-                     }
-                     else
-                     {
-
-                        strFormat.Format("hw:%d,%d", cardNum, devNum);
-
-                     }
+                     strFormat.Format("hw:%d,%d,%d", cardNum, devNum, subDevNum);
 
                      straName.add(snd_pcm_info_get_name(pcmInfo));
 
@@ -182,7 +171,10 @@ namespace multimedia
 
                   }
 
+                  }
+
                }
+
             }
 
             // Close the card's control interface after we're done with it
@@ -289,55 +281,60 @@ namespace multimedia
 
          dir = 1;
 
-         if((err = snd_pcm_hw_params_set_period_time_near(m_ppcm, m_phwparams, &m_dwPeriodTime, &dir)) < 0)
+//         if((err = snd_pcm_hw_params_set_period_time_near(m_ppcm, m_phwparams, &m_dwPeriodTime, &dir)) < 0)
+//         {
+//
+//            const char * psz = snd_strerror(err);
+//
+//            TRACE("Unable to set period time %i for playback: %s\n", m_dwPeriodTime, psz);
+//
+//            return result_error;
+//
+//         }
+//         m_dwBufferTime = m_iBufferCount * m_dwPeriodTime;
+//
+         err = snd_pcm_hw_params_set_periods(m_ppcm, m_phwparams, m_iBufferCount, 0);
+
+         if(err < 0)
          {
 
-            TRACE("Unable to set period time %i for playback: %s\n", m_dwPeriodTime, snd_strerror(err));
+            const char * pszError = snd_strerror(err);
+
+            TRACE("snd_pcm_hw_params_get_periods failed: %s\n", pszError);
 
             return result_error;
 
          }
 
-         m_dwBufferTime = m_iBufferCount * 1000 * 1000 / uiFreq;
+         //m_framesPeriodSize = m_dwPeriodTime * uiFreq / (1000 * 1000);
 
-         dir = 1;
+         err = snd_pcm_hw_params_set_period_size(m_ppcm, m_phwparams, m_framesBuffer, 0);
 
-         if((err = snd_pcm_hw_params_set_buffer_time_near(m_ppcm, m_phwparams, &m_dwBufferTime, &dir)) < 0)
+         if(err < 0)
          {
 
-            TRACE("Unable to set buffer time %i for playback: %s\n", m_dwBufferTime, snd_strerror(err));
+            const char * pszError = snd_strerror(err);
+
+            TRACE("snd_pcm_hw_params_get_period_size failed: %s\n", pszError);
 
             return result_error;
 
          }
 
-         snd_pcm_uframes_t size;
+         //m_framesPeriodSize = size;
 
-         dir = 1;
+//         if((err = snd_pcm_hw_params_get_buffer_size(m_phwparams, &size)) < 0)
+//         {
+//
+//            TRACE("Unable to get buffer size for playback: %s\n", snd_strerror(err));
+//
+//            return result_error;
+//
+//         }
+//
+//         m_framesBufferSize = m_iBufferCount * m_framesPeriodSize;
 
-         if((err = snd_pcm_hw_params_get_period_size(m_phwparams, &size, &dir)) < 0)
-         {
-
-            TRACE("Unable to get period size for playback: %s\n", snd_strerror(err));
-
-            return result_error;
-
-         }
-
-         m_framesPeriodSize = size;
-
-         if((err = snd_pcm_hw_params_get_buffer_size(m_phwparams, &size)) < 0)
-         {
-
-            TRACE("Unable to get buffer size for playback: %s\n", snd_strerror(err));
-
-            return result_error;
-
-         }
-
-         m_framesBufferSize = size;
-
-         m_iBufferCount = (m_framesBufferSize / m_framesPeriodSize);
+          //= (m_framesBufferSize / );
 
          if ((err = snd_pcm_hw_params (m_ppcm, m_phwparams)) < 0)
          {
