@@ -47,7 +47,6 @@ namespace multimedia
          m_estate             = state_initial;
          m_pthreadCallback    = NULL;
          m_mmr                = result_success;
-         m_peffect            = NULL;
          m_bWrite             = false;
          m_bStarted           = false;
 
