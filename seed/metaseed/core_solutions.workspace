@@ -119,6 +119,7 @@
 			<Depends filename="../../../app-veriwell/appseed/audio_decode_libmpg123/audio_decode_libmpg123.cbp" />
 			<Depends filename="../../../app-core/appseed/audio_decode_spotify/audio_decode_spotify.cbp" />
 			<Depends filename="../../../app-core/appseed/audio_decode_wave/audio_decode_wave.cbp" />
+			<Depends filename="../../../app-core/appseed/audio_decode_youtube_player_api_for_iframe/audio_decode_youtube_player_api_for_iframe.cbp" />
 			<Depends filename="../../appseed/audio_alsa/audio_alsa.cbp" />
 			<Depends filename="../../../app/appseed/aura/aura.cbp" />
 			<Depends filename="../../../app/appseed/axis/axis.cbp" />
@@ -195,6 +196,7 @@
 		<Project filename="../../../app-core/appseed/audio_decode_wave/audio_decode_wave.cbp">
 			<Depends filename="../../../app-core/appseed/multimedia/multimedia.cbp" />
 		</Project>
+		<Project filename="../../../app-core/appseed/audio_decode_youtube_player_api_for_iframe/audio_decode_youtube_player_api_for_iframe.cbp" />
 		<Project filename="../../appseed/audio_alsa/audio_alsa.cbp">
 			<Depends filename="../../../app/appseed/base/base.cbp" />
 			<Depends filename="../../../app/appseed/core/core.cbp" />
